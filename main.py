@@ -337,10 +337,11 @@ if __name__ == "__main__":
         telegram_bot_token=config.get('TELEGRAM_BOT_TOKEN'),
         telegram_chat_id=config.get('TELEGRAM_CHAT_ID')
     )
-    sleep_seconds = config.get('SLEEP_GAP')
-    if sleep_seconds is None or sleep_seconds == '':
-        sleep_seconds = 5
-    sleep_seconds = float(sleep_seconds)
+  #  sleep_seconds = config.get('SLEEP_GAP')
+   # if sleep_seconds is None or sleep_seconds == '':
+   #     sleep_seconds = 5
+   # sleep_seconds = float(sleep_seconds)
+    sleep_seconds = 20.0
     users = config.get('USER')
     passwords = config.get('PWD')
     if users is None or passwords is None:
