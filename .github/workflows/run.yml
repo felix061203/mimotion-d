@@ -2,14 +2,14 @@ name: 刷步数
 
 on:
   schedule:
-    - cron: '55 12,14 * * *'
-      timezone: Asia/Shanghai
+    - cron: '55 04,06 * * *'
+  #    timezone: Asia/Shanghai
   workflow_dispatch:
 
 # ========== 这里就是新增的并发控制，on和jobs中间！ ==========
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+#concurrency:
+#  group: ${{ github.workflow }}-${{ github.ref }}
+#  cancel-in-progress: true
 # ======================================================
 
 jobs:
